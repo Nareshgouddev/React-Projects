@@ -2,9 +2,10 @@
 
 ## screenshot
 
-<img src="Project.png" width="200" alt="Project Logo">
+<img src="Project.png" width="600" alt="Project pic">
 
 ## Installation
+
 ```bash
 npm install
 npm run dev
