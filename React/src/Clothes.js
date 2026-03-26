@@ -1,4 +1,5 @@
-export const clothesData = [
+// ESSENTIALS CATEGORY
+const essentialsData = [
   {
     id: 1,
     name: "Sierra Structured Tee",
@@ -12,6 +13,754 @@ export const clothesData = [
     image:
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
   },
+  {
+    id: 101,
+    name: "Classic White Tee",
+    rating: 4.6,
+    description: "Pure cotton essentials for every wardrobe.",
+    price: "$35",
+    category: "Essentials",
+    badge: "Bestseller",
+    colors: ["White", "Black", "Gray"],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1495521821757-a1efb6729352?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 102,
+    name: "Premium Crew Neck",
+    rating: 4.7,
+    description: "Soft-touch crew neck with reinforced seams.",
+    price: "$45",
+    category: "Essentials",
+    badge: "Everyday",
+    colors: ["Navy", "Cream", "Heather Gray"],
+    sizes: ["XS", "S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 103,
+    name: "Breton Stripe Longsleeve",
+    rating: 4.5,
+    description: "Nautical stripe classic in soft double-knit cotton.",
+    price: "$64",
+    category: "Essentials",
+    badge: "Everyday",
+    colors: ["Navy", "Cream", "Black"],
+    sizes: ["XS", "S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 104,
+    name: "Basic V-Neck Tee",
+    rating: 4.4,
+    description: "Versatile v-neck for layering or standalone wear.",
+    price: "$38",
+    category: "Essentials",
+    badge: "Popular",
+    colors: ["White", "Black", "Olive"],
+    sizes: ["XS", "S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1503342394128-c104cbb3b5d5?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+// DENIM CATEGORY
+const denimData = [
+  {
+    id: 2,
+    name: "Monroe Tapered Denim",
+    rating: 4.8,
+    description: "Soft-stretch selvedge denim with a refined taper.",
+    price: "$118",
+    category: "Denim",
+    badge: "New",
+    colors: ["Indigo", "Jet Black"],
+    sizes: ["28", "30", "32", "34"],
+    image:
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 201,
+    name: "Classic Blue Jeans",
+    rating: 4.6,
+    description: "Timeless denim with perfect wash and fit.",
+    price: "$95",
+    category: "Denim",
+    badge: "Bestseller",
+    colors: ["Light Blue", "Dark Indigo", "Black"],
+    sizes: ["28", "30", "32", "34", "36"],
+    image:
+      "https://images.unsplash.com/photo-1474611338391-4c1f4b4c5fe5?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 202,
+    name: "Slim Fit Denim",
+    rating: 4.5,
+    description: "Tailored slim silhouette with premium fabric.",
+    price: "$110",
+    category: "Denim",
+    badge: "Editor Pick",
+    colors: ["Medium Wash", "Dark Wash"],
+    sizes: ["28", "30", "32", "34"],
+    image:
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 203,
+    name: "Vintage Wash Denim",
+    rating: 4.7,
+    description: "Distressed vintage look with authentic detailing.",
+    price: "$129",
+    category: "Denim",
+    badge: "Trending",
+    colors: ["Vintage Blue", "Faded Black"],
+    sizes: ["28", "30", "32", "34"],
+    image:
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 204,
+    name: "Flare Denim",
+    rating: 4.4,
+    description: "Statement flare cut with modern proportions.",
+    price: "$125",
+    category: "Denim",
+    badge: "New",
+    colors: ["Classic Blue", "Black"],
+    sizes: ["28", "30", "32", "34"],
+    image:
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+// STREETWEAR CATEGORY
+const streetwearData = [
+  {
+    id: 3,
+    name: "Cloudline Oversized Hoodie",
+    rating: 4.2,
+    description: "Brushed fleece interior with dropped shoulder silhouette.",
+    price: "$86",
+    category: "Streetwear",
+    badge: "Limited",
+    colors: ["Sand", "Bone", "Slate"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 8,
+    name: "Pulse Graphic Shirt",
+    rating: 4.3,
+    description: "Dense combed cotton featuring seasonal artwork print.",
+    price: "$62",
+    category: "Streetwear",
+    badge: "Drop 03",
+    colors: ["Washed Black", "Off White"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1484515991647-c5760fcecfc7?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 301,
+    name: "Bold Statement Tee",
+    rating: 4.5,
+    description: "Oversized fit with premium graphic design.",
+    price: "$58",
+    category: "Streetwear",
+    badge: "Limited",
+    colors: ["White", "Black"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    image:
+      "https://images.unsplash.com/photo-1503342394128-c104cbb3b5d5?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 302,
+    name: "Urban Joggers",
+    rating: 4.4,
+    description: "Fitted waist with tapered legs for that perfect fit.",
+    price: "$79",
+    category: "Streetwear",
+    badge: "Popular",
+    colors: ["Black", "Navy", "Gray"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1506629905607-d405b7a6e716?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 303,
+    name: "Oversized Sweatshirt",
+    rating: 4.6,
+    description: "Comfort meets style with loose silhouette.",
+    price: "$84",
+    category: "Streetwear",
+    badge: "Bestseller",
+    colors: ["Charcoal", "Navy", "Cream"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1556821552-9f63c1e4cdff?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+// OUTERWEAR CATEGORY
+const outerwearData = [
+  {
+    id: 4,
+    name: "Noir Moto Jacket",
+    rating: 4.9,
+    description: "Supple vegan leather with polished gunmetal hardware.",
+    price: "$220",
+    category: "Outerwear",
+    badge: "Top Rated",
+    colors: ["Black"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 7,
+    name: "Haven Wool Overcoat",
+    rating: 4.7,
+    description: "Tailored longline overcoat made for layered city looks.",
+    price: "$259",
+    category: "Outerwear",
+    badge: "Premium",
+    colors: ["Camel", "Graphite"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 11,
+    name: "Ridge Trucker Jacket",
+    rating: 4.5,
+    description: "Classic denim shell with brushed interior lining.",
+    price: "$145",
+    category: "Outerwear",
+    badge: "Classic",
+    colors: ["Blue Wash", "Ecru"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1578932750294-f5075e85f44a?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 14,
+    name: "Nimbus Puffer Vest",
+    rating: 4.0,
+    description: "Light thermal insulation and water-resistant shell.",
+    price: "$124",
+    category: "Outerwear",
+    badge: "Travel",
+    colors: ["Taupe", "Black"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1616258734679-2d8f4f5bbf8f?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 401,
+    name: "Windbreaker Shell",
+    rating: 4.6,
+    description: "Lightweight and packable for outdoor adventures.",
+    price: "$98",
+    category: "Outerwear",
+    badge: "Active",
+    colors: ["Black", "Navy", "Forest"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1551169014-72e6e15f8fbf?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+// DRESSES CATEGORY
+const dressesData = [
+  {
+    id: 5,
+    name: "Rosette Midi Dress",
+    rating: 4.4,
+    description: "Airy chiffon drape with a hand-painted floral print.",
+    price: "$132",
+    category: "Dresses",
+    badge: "Editor Pick",
+    colors: ["Rose", "Sky"],
+    sizes: ["XS", "S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 13,
+    name: "Emerald Slip Dress",
+    rating: 4.8,
+    description: "Bias-cut satin slip crafted for evening elegance.",
+    price: "$168",
+    category: "Dresses",
+    badge: "Evening",
+    colors: ["Emerald", "Midnight"],
+    sizes: ["XS", "S", "M"],
+    image:
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 501,
+    name: "Summer Day Dress",
+    rating: 4.5,
+    description: "Light and breathable perfect for warm days.",
+    price: "$89",
+    category: "Dresses",
+    badge: "Seasonal",
+    colors: ["White", "Blush", "Powder Blue"],
+    sizes: ["XS", "S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1595646905112-4d71bcdd2085?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 502,
+    name: "Maxi Evening Gown",
+    rating: 4.9,
+    description: "Floor-length elegance with flowing silhouette.",
+    price: "$245",
+    category: "Dresses",
+    badge: "Luxury",
+    colors: ["Burgundy", "Navy", "Black"],
+    sizes: ["XS", "S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 503,
+    name: "Casual A-Line Dress",
+    rating: 4.3,
+    description: "Flattering cut for everyday comfort and style.",
+    price: "$76",
+    category: "Dresses",
+    badge: "Everyday",
+    colors: ["Gray", "Black", "Navy"],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1506629082632-ae7cfe9e0342?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+// ATHLEISURE CATEGORY
+const athleisureData = [
+  {
+    id: 6,
+    name: "Transit Cargo Joggers",
+    rating: 4.1,
+    description: "Tapered utility pants with hidden zip pocket details.",
+    price: "$94",
+    category: "Athleisure",
+    badge: "Popular",
+    colors: ["Khaki", "Stone", "Ink"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 10,
+    name: "Arc High-Rise Leggings",
+    rating: 4.9,
+    description: "Sculpting knit with matte finish and sweat-wick comfort.",
+    price: "$74",
+    category: "Athleisure",
+    badge: "Top Rated",
+    colors: ["Ebony", "Cocoa", "Steel"],
+    sizes: ["XS", "S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1506629905607-d405b7a6e716?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 17,
+    name: "Aero Running Shorts",
+    rating: 4.4,
+    description: "Featherweight shell with built-in support liner.",
+    price: "$52",
+    category: "Athleisure",
+    badge: "Training",
+    colors: ["Black", "Signal Red", "Ice"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1593032465171-8bd5f5f6f7ce?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 601,
+    name: "Performance Tank Top",
+    rating: 4.6,
+    description: "Moisture-wicking fabric for intense workouts.",
+    price: "$48",
+    category: "Athleisure",
+    badge: "Active",
+    colors: ["Black", "White", "Charcoal"],
+    sizes: ["XS", "S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1506259986854-017eabcf4798?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 602,
+    name: "Flex Gym Jacket",
+    rating: 4.7,
+    description: "Stretchy fabric with thumb holes and sleek design.",
+    price: "$89",
+    category: "Athleisure",
+    badge: "Bestseller",
+    colors: ["Black", "Navy", "Burgundy"],
+    sizes: ["XS", "S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1551169014-72e6e15f8fbf?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+// SHIRTS CATEGORY
+const shirtsData = [
+  {
+    id: 9,
+    name: "Marina Linen Shirt",
+    rating: 4.6,
+    description: "Breathable weave with a clean resort-inspired fit.",
+    price: "$89",
+    category: "Shirts",
+    badge: "Summer",
+    colors: ["White", "Sea Blue", "Sage"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 16,
+    name: "Canyon Flannel Shirt",
+    rating: 4.6,
+    description: "Brushed twill weave for cozy layering comfort.",
+    price: "$76",
+    category: "Shirts",
+    badge: "Bestseller",
+    colors: ["Rust", "Forest", "Navy"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 701,
+    name: "Silk Blend Oxford",
+    rating: 4.7,
+    description: "Premium silk blend for sophisticated style.",
+    price: "$128",
+    category: "Shirts",
+    badge: "Luxury",
+    colors: ["White", "Light Blue", "Blush"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 702,
+    name: "Casual Poplin Shirt",
+    rating: 4.4,
+    description: "Lightweight cotton poplin perfect for any occasion.",
+    price: "$65",
+    category: "Shirts",
+    badge: "Everyday",
+    colors: ["White", "Navy", "Stripes"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 703,
+    name: "Linen Resort Shirt",
+    rating: 4.5,
+    description: "Breathable elegance for vacation and everyday.",
+    price: "$82",
+    category: "Shirts",
+    badge: "Seasonal",
+    colors: ["Cream", "Pale Yellow", "Seafoam"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+// KNITWEAR CATEGORY
+const knitwearData = [
+  {
+    id: 12,
+    name: "North Knit Turtleneck",
+    rating: 4.2,
+    description: "Soft rib-knit profile with warm neck wrap design.",
+    price: "$98",
+    category: "Knitwear",
+    badge: "Cold Weather",
+    colors: ["Charcoal", "Sand", "Berry"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 801,
+    name: "Cozy Wool Sweater",
+    rating: 4.6,
+    description: "Pure merino wool for ultimate warmth and comfort.",
+    price: "$145",
+    category: "Knitwear",
+    badge: "Premium",
+    colors: ["Cream", "Heather Gray", "Navy"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 802,
+    name: "Cable Knit Cardigan",
+    rating: 4.7,
+    description: "Classic cable pattern with soft cotton blend.",
+    price: "$125",
+    category: "Knitwear",
+    badge: "Classic",
+    colors: ["Cream", "Brown", "Black"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1534125589518-0c6f61dd8b72?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 803,
+    name: "Lightweight V-Neck",
+    rating: 4.4,
+    description: "Perfect layering piece for transitional seasons.",
+    price: "$72",
+    category: "Knitwear",
+    badge: "Versatile",
+    colors: ["White", "Light Gray", "Navy"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 804,
+    name: "Oversized Knit Sweater",
+    rating: 4.5,
+    description: "Comfort-first design with relaxed fit.",
+    price: "$95",
+    category: "Knitwear",
+    badge: "Bestseller",
+    colors: ["Oversized Cream", "Stone", "Charcoal"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1506629082632-ae7cfe9e0342?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+// BOTTOMS CATEGORY
+const bottomsData = [
+  {
+    id: 15,
+    name: "Harbor Chino Shorts",
+    rating: 4.3,
+    description: "Mid-thigh modern cut with soft peached cotton feel.",
+    price: "$58",
+    category: "Bottoms",
+    badge: "Warm Weather",
+    colors: ["Khaki", "Navy", "Stone"],
+    sizes: ["28", "30", "32", "34"],
+    image:
+      "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 901,
+    name: "Tailored Trousers",
+    rating: 4.7,
+    description: "Professional cut with elegant drape and comfort.",
+    price: "$118",
+    category: "Bottoms",
+    badge: "Professional",
+    colors: ["Black", "Charcoal", "Navy"],
+    sizes: ["28", "30", "32", "34"],
+    image:
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 902,
+    name: "Linen Beach Shorts",
+    rating: 4.5,
+    description: "Lightweight and breathable for summer adventures.",
+    price: "$62",
+    category: "Bottoms",
+    badge: "Summer",
+    colors: ["White", "Linen", "Seafoam"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 903,
+    name: "Wide Leg Pants",
+    rating: 4.4,
+    description: "Statement silhouette with comfortable waist.",
+    price: "$105",
+    category: "Bottoms",
+    badge: "Trendy",
+    colors: ["Black", "Cream", "Camel"],
+    sizes: ["28", "30", "32", "34"],
+    image:
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 904,
+    name: "Classic Denim Shorts",
+    rating: 4.6,
+    description: "Timeless denim shorts with perfect rise.",
+    price: "$68",
+    category: "Bottoms",
+    badge: "Bestseller",
+    colors: ["Light Wash", "Medium Wash", "Dark Wash"],
+    sizes: ["28", "30", "32", "34"],
+    image:
+      "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+// ACCESSORIES CATEGORY
+const accessoriesData = [
+  {
+    id: 18,
+    name: "Alpine Cashmere Scarf",
+    rating: 4.9,
+    description: "Ultra-fine cashmere blend with luxe brushed finish.",
+    price: "$92",
+    category: "Accessories",
+    badge: "Luxury",
+    colors: ["Cream", "Camel", "Ash"],
+    sizes: ["One Size"],
+    image:
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 1001,
+    name: "Leather Crossbody Bag",
+    rating: 4.8,
+    description:
+      "Premium leather with adjustable strap for everyday versatility.",
+    price: "$189",
+    category: "Accessories",
+    badge: "Premium",
+    colors: ["Black", "Cognac", "Navy"],
+    sizes: ["One Size"],
+    image:
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 1002,
+    name: "Classic Beanie",
+    rating: 4.5,
+    description: "Warm knit beanie in organic cotton blend.",
+    price: "$38",
+    category: "Accessories",
+    badge: "Winter",
+    colors: ["Black", "Navy", "Gray", "Cream"],
+    sizes: ["One Size"],
+    image:
+      "https://images.unsplash.com/photo-1539368616149-11ff5eb53f59?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 1003,
+    name: "Sunglasses - Retro Style",
+    rating: 4.7,
+    description: "UV protection with retro-inspired acetate frame.",
+    price: "$126",
+    category: "Accessories",
+    badge: "Summer",
+    colors: ["Black", "Tortoiseshell", "Gold"],
+    sizes: ["One Size"],
+    image:
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 1004,
+    name: "Premium Leather Belt",
+    rating: 4.6,
+    description: "Handcrafted belt with polished buckle.",
+    price: "$78",
+    category: "Accessories",
+    badge: "Essentials",
+    colors: ["Black", "Cognac", "Tan"],
+    sizes: ["One Size"],
+    image:
+      "https://images.unsplash.com/photo-1590195953828-d19899dcf0ff?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+// OCCASION CATEGORY
+const occasionData = [
+  {
+    id: 19,
+    name: "Velour Night Blazer",
+    rating: 4.7,
+    description: "Tailored velvet blazer with satin peak lapel details.",
+    price: "$189",
+    category: "Occasion",
+    badge: "Event Ready",
+    colors: ["Wine", "Midnight"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 1101,
+    name: "Sequin Evening Jacket",
+    rating: 4.8,
+    description: "Glamorous jacket adorned with premium sequins.",
+    price: "$245",
+    category: "Occasion",
+    badge: "Luxury",
+    colors: ["Gold", "Silver", "Rose Gold"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1519824145062-472353481c27?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 1102,
+    name: "Formal Tuxedo Shirt",
+    rating: 4.9,
+    description: "Premium cotton with pearl buttons and bib front.",
+    price: "$156",
+    category: "Occasion",
+    badge: "Premium",
+    colors: ["White", "Ivory"],
+    sizes: ["S", "M", "L", "XL"],
+    image:
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 1103,
+    name: "Metallic Party Dress",
+    rating: 4.6,
+    description: "Show-stopping metallic fabric with elegant cut.",
+    price: "$198",
+    category: "Occasion",
+    badge: "New",
+    colors: ["Gold", "Silver", "Copper"],
+    sizes: ["XS", "S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 1104,
+    name: "Classic Tweed Blazer",
+    rating: 4.5,
+    description: "Sophisticated tweed with tailored fit for any formal event.",
+    price: "$175",
+    category: "Occasion",
+    badge: "Classic",
+    colors: ["Black", "Charcoal", "Brown"],
+    sizes: ["S", "M", "L"],
+    image:
+      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+// COMBINE ALL CATEGORIES INTO ONE ARRAY
+export const clothesData = [
+  ...essentialsData,
   {
     id: 2,
     name: "Monroe Tapered Denim",
@@ -246,17 +995,45 @@ export const clothesData = [
     image:
       "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80",
   },
-  {
-    id: 20,
-    name: "Breton Stripe Longsleeve",
-    rating: 4.5,
-    description: "Nautical stripe classic in soft double-knit cotton.",
-    price: "$64",
-    category: "Essentials",
-    badge: "Everyday",
-    colors: ["Navy", "Cream", "Black"],
-    sizes: ["XS", "S", "M", "L"],
-    image:
-      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
-  },
+  ...essentialsData,
+  ...denimData,
+  ...streetwearData,
+  ...outerwearData,
+  ...dressesData,
+  ...athleisureData,
+  ...shirtsData,
+  ...knitwearData,
+  ...bottomsData,
+  ...accessoriesData,
+  ...occasionData,
+];
+
+// EXPORT CATEGORY-SPECIFIC DATA FOR FILTERING AND ORGANIZATION
+export const categoryData = {
+  Essentials: essentialsData,
+  Denim: denimData,
+  Streetwear: streetwearData,
+  Outerwear: outerwearData,
+  Dresses: dressesData,
+  Athleisure: athleisureData,
+  Shirts: shirtsData,
+  Knitwear: knitwearData,
+  Bottoms: bottomsData,
+  Accessories: accessoriesData,
+  Occasion: occasionData,
+};
+
+// EXPORT ALL CATEGORY NAMES
+export const allCategories = [
+  "Essentials",
+  "Denim",
+  "Streetwear",
+  "Outerwear",
+  "Dresses",
+  "Athleisure",
+  "Shirts",
+  "Knitwear",
+  "Bottoms",
+  "Accessories",
+  "Occasion",
 ];
