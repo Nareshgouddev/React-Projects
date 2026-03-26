@@ -1,0 +1,139 @@
+.brand-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+}
+
+.hero-section {
+    border-radius: 24px;
+    padding: 3rem 2.5rem;
+    margin-bottom: 2rem;
+    color: #f6f1ea;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(224, 167, 105, 0.35), transparent 38%),
+        radial-gradient(circle at 80% 10%, rgba(156, 113, 84, 0.4), transparent 32%),
+        linear-gradient(125deg, #191514 0%, #292321 55%, #3b312d 100%);
+    box-shadow: 0 25px 40px rgba(28, 23, 20, 0.3);
+}
+
+.eyebrow {
+    margin: 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: #e2d0bd;
+}
+
+.hero-section h1 {
+    margin: 0.65rem 0 1rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.08;
+}
+
+.hero-copy {
+    max-width: 700px;
+    margin: 0;
+    color: #dfd4c9;
+    line-height: 1.6;
+}
+
+.hero-meta {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.hero-meta span {
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid rgba(253, 242, 233, 0.25);
+    background: rgba(255, 255, 255, 0.07);
+    font-size: 0.85rem;
+}
+
+.collection-strip {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.collection-strip p {
+    margin: 0;
+    font-weight: 700;
+    color: #433028;
+}
+
+.collection-strip ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.collection-strip li {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4f3c33;
+    background: #f3e4d6;
+    border: 1px solid #e6d2bf;
+    border-radius: 999px;
+    padding: 0.4rem 0.75rem;
+}
+
+.product-section {
+    margin-top: 2rem;
+}
+
+.section-heading {
+    margin-bottom: 1.2rem;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 1.45rem;
+    color: #32231b;
+}
+
+.section-heading p {
+    margin-top: 0.4rem;
+    color: #7a6357;
+}
+
+.product-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+@media (max-width: 700px) {
+    .brand-page {
+        padding: 1rem 0.85rem 2.5rem;
+    }
+
+    .hero-section {
+        padding: 2rem 1.1rem;
+    }
+
+    .hero-meta {
+        gap: 0.5rem;
+    }
+
+    .hero-meta span {
+        font-size: 0.78rem;
+    }
+}
+
+button {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4f3c33;
+    background: #f3e4d6;
+    border: 1px solid #e6d2bf;
+    border-radius: 999px;
+
+}
