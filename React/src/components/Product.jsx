@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const Product = () => {
   const [top, setTop] = useState(clothesData);
+  const [search, setSearch] = useState("");
   function ShowAll() {
     setTop(clothesData);
   }
@@ -12,6 +13,15 @@ const Product = () => {
     const filter = clothesData.filter((cloth) => cloth.rating >= 4.8);
     setTop(filter);
   }
+  function SearchHandle() {
+    const filteredResult = clothesData.filter((cloth) =>
+      cloth.name.toLowerCase().includes(search.toLowerCase()),
+    );
+    setTop(filteredResult);
+  }
+  const displayedProducts = clothesData.filter((cloth) =>
+    cloth.name.toLowerCase().includes(search.toLowerCase()),
+  );
   return (
     <main className="brand-page">
       <header className="hero-section">
@@ -42,6 +52,15 @@ const Product = () => {
       <div>
         <button onClick={ShowAll}>Show All</button>
         <button onClick={topRated}>TOP RATED ONES</button>
+        <div className="Search">
+          <input
+            type="text"
+            placeholder="Search the Item"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <button onClick={SearchHandle}>Search</button>
+        </div>
       </div>
       <section className="product-section" aria-label="Top picks products">
         <div className="section-heading">
@@ -53,6 +72,15 @@ const Product = () => {
             <Card key={cloth.id} cloth={cloth} />
           ))}
         </div>
+      </section>
+      <section className="product-grid">
+        {displayedProducts.length > 0 ? (
+          displayedProducts.map((cloth) => (
+            <Card key={cloth.id} cloth={cloth} />
+          ))
+        ) : (
+          <p>No results found for "{search}"</p>
+        )}
       </section>
     </main>
   );

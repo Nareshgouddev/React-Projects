@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import { Link, Route, Routes } from "react-router-dom";
 import Product from "./components/Product";
 import About from "./components/About";
+import Dashboard from "./components/Dashboard";
 import "./App.css";
 
 const App = () => {
@@ -29,6 +30,11 @@ const App = () => {
                 About
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/dashboard" className="nav-link">
+                Dashboard
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
@@ -37,6 +43,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Product />} />
           <Route path="/About" element={<About />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </main>
       <footer className="footer">
